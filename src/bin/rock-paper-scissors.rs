@@ -3,7 +3,7 @@ use rand::seq::IndexedRandom;
 use std::io;
 
 fn main() {
-    turn_game(5);
+    let mut score = turn_game(5);
 }
 
 fn turn_game(ronde: i32) -> i32 {
