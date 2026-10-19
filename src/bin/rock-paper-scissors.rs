@@ -6,7 +6,7 @@ fn main() {
     turn_game(5);
 }
 
-fn turn_game(ronde: i32) {
+fn turn_game(ronde: i32) -> i32 {
     let mut turn: i32 = 0;
     let mut score: i32 = 0;
     while turn <= ronde {
@@ -43,4 +43,6 @@ fn turn_game(ronde: i32) {
             turn += 1;
         }
     }
+
+    return score;
 }
